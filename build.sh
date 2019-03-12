@@ -2,5 +2,6 @@
 
 set -e
 
-exec ./gradlew assembleDebug
-exec adb install app/build/outputs/apk/debug/app-debug.apk
+./gradlew assembleDebug
+adb install app/build/outputs/apk/debug/app-debug.apk
+echo "ok"
